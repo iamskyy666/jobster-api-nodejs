@@ -12,10 +12,10 @@ const register = async (req, res) => {
 
   res.status(StatusCodes.CREATED).json({
     user: {
+      name: user.name,
       email: user.email,
       lastName: user.lastName,
       location: user.location,
-      name: user.name,
       token,
     },
   });
@@ -44,14 +44,54 @@ const login = async (req, res) => {
 
   res.status(StatusCodes.OK).json({
     user: {
-      name: user.email,
+      name: user.name,
+      email: user.email,
       lastName: user.lastName,
       location: user.location,
-      name: user.name,
       token,
     },
+  });
+};
+
+const updateUser = async (req, res) => {
+  const { email, name, lastName, location } = req.body;
+
+  // Validate incoming data
+  if (!email || !name || !lastName || !location) {
+    throw new BadRequestError("Please provide all values!");
+  }
+
+  // Find currently authenticated user
+  const user = await User.findById(req.user.userId);
+
+  if (!user) {
+    throw new UnauthenticatedError("User not found");
+  }
+
+  // Update fields
+  user.name = name;
+  user.email = email;
+  user.lastName = lastName;
+  user.location = location;
+
+  // Save updated document
+  await user.save();
+
+  // Generate a fresh JWT
+  const token = user.createJWT();
+
+  // User data to send back
+  const userResponse = {
+    name: user.name,
+    email: user.email,
+    lastName: user.lastName,
+    location: user.location,
+  };
+
+  res.status(StatusCodes.OK).json({
+    user: userResponse,
     token,
   });
 };
 
-export { register, login };
+export { register, login, updateUser };

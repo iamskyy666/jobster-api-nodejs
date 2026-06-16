@@ -1,29 +1,3 @@
-#### Create Test User
-
-- test front-end request
-- in postman or front-end
-- make sure email and password are the same (or change the front-end)
-
-```js
-{
-    "name":"demo user",
-    "email":"testUser@test.com",
-    "password":"secret"
-}
-```
-
-- navigate to client/src/pages/Register.js
-- make sure email and password match our test user
-
-```js
-<button
-  type='button'
-  className='btn btn-block btn-hipster'
-  disabled={isLoading}
-  onClick={() =>
-  dispatch(loginUser({ email: 'testUser@test.com', password: 'secret' }))}>
-
-```
 
 #### Update User Functionality
 
