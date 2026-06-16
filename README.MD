@@ -1,24 +1,3 @@
-#### Modify Response in Register and Login
-
-- change the response structure in
-  register and login controllers (just keep old StatusCodes)
-
-controllers/auth.js
-
-```js
-res.status(StatusCodes.CREATED).json({
-  user: {
-    email: user.email,
-    lastName: user.lastName,
-    location: user.location,
-    name: user.name,
-    token,
-  },
-});
-```
-
-- Login and Register Works Now :):):)
-
 #### Create Test User
 
 - test front-end request
