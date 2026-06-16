@@ -6,33 +6,27 @@ import helmet from "helmet";
 import authRouter from "./routes/auth.router.js";
 import jobsRouter from "./routes/jobs.router.js";
 
+
 import authMiddleware from "./middleware/authentication.middleware.js";
 import notFoundMiddleware from "./middleware/not-found.middleware.js";
 import errorHandlerMiddleware from "./middleware/error-handler.middleware.js";
 import connectDB from "./db/connect.js";
 
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 
-/*
-|--------------------------------------------------------------------------
-| Core Middleware
-|--------------------------------------------------------------------------
-*/
+// Core Middleware
 app.use(express.json());
 
-/*
-|--------------------------------------------------------------------------
-| Security Middleware
-|--------------------------------------------------------------------------
-*/
-
+// Security Middleware
 app.use(helmet());
 
-/*
-|--------------------------------------------------------------------------
-| Home Route
-|--------------------------------------------------------------------------
-*/
+// Home Route
 app.get("/", (_, res) => {
   res.send(`
     <h1>Jobs API 🚀</h1>
@@ -40,29 +34,24 @@ app.get("/", (_, res) => {
   `);
 });
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-*/
+// API Routes
 app.use("/api/v1/auth", authRouter);
-
 app.use("/api/v1/jobs", authMiddleware, jobsRouter);
 
-/*
-|--------------------------------------------------------------------------
-| Error Handling Middleware
-|--------------------------------------------------------------------------
-*/
+// Serve React static files
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+
+// Catch all frontend routes
+app.get("/*splat", (_, res) => {
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+});
+
+// Error Handling Middlewares
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
-/*
-|--------------------------------------------------------------------------
-| Server Startup
-|--------------------------------------------------------------------------
-*/
-const PORT = process.env.PORT || 3000;
+// Server Startup
+const PORT = process.env.PORT || 5000;
 
 const start = async () => {
   try {

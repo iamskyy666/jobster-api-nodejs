@@ -1,32 +1,5 @@
 # Jobster API
 
-#### Remove API Limiter
-
-- remove these lines of code
-
-app.js
-
-```js
-const rateLimiter = require('express-rate-limit');
-
-app.set('trust proxy', 1);
-app.use(
-  rateLimiter({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100, // limit each IP to 100 requests per windowMs
-  })
-);
-```
-
-#### Remove CORS
-
-- we don't want external JS apps to access our API (only our front-end)
-- remove these lines of code
-
-```js
-const cors = require('cors');
-app.use(cors());
-```
 
 #### Package.json
 
