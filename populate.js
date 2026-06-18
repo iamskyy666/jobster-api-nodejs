@@ -6,7 +6,7 @@ import Job from "./models/Job.model.js";
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
-    await Job.deleteMany({});
+    // await Job.deleteMany({});
     await Job.create(mockJobs);
     console.log(`Populated successfully!`);
     process.exit(0);

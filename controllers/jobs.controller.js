@@ -28,7 +28,7 @@ const getAllJobs = async (req, res) => {
 
   let result = Job.find(queryObj);
 
-  // Chain sort conditions (dropdowns)
+  // chain sort conditions (dropdowns)
   if (sort === "latest") {
     result = result.sort("-createdAt");
   }
@@ -42,10 +42,22 @@ const getAllJobs = async (req, res) => {
     result = result.sort("-position");
   }
 
+  // setup pagination
+  const page = Number(req.query.page) || 1;
+  const limit = Number(req.query.limit) || 8;
+  const skip = (page - 1) * limit;
+
+  result = result.skip(skip).limit(limit);
+
   const jobs = await result;
+
+  const totalJobs = await Job.countDocuments(queryObj); // total 40 jobs
+  const numOfPages = Math.ceil(totalJobs / limit); // 40/8 = 5
 
   res.status(StatusCodes.OK).json({
     jobs,
+    totalJobs,
+    numOfPages,
   });
 };
 

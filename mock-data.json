@@ -1,159 +1,159 @@
 [
   {
-    "company": "Google",
-    "position": "Frontend Developer",
-    "status": "interview",
-    "jobType": "full-time",
-    "jobLocation": "Bangalore",
+    "company": "Slack",
+    "position": "Frontend Engineer",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Remote",
     "createdBy": "6a33ba99fc6047744ad2b620"
   },
   {
-    "company": "Microsoft",
-    "position": "Backend Developer",
+    "company": "Coinbase",
+    "position": "Backend Engineer",
+    "status": "interview",
+    "jobType": "remote",
+    "jobLocation": "Remote",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Dropbox",
+    "position": "React Developer",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Remote",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Zoom",
+    "position": "Software Engineer",
+    "status": "declined",
+    "jobType": "full-time",
+    "jobLocation": "San Jose",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Salesforce",
+    "position": "Full Stack Engineer",
     "status": "pending",
     "jobType": "full-time",
     "jobLocation": "Hyderabad",
     "createdBy": "6a33ba99fc6047744ad2b620"
   },
   {
-    "company": "Amazon",
-    "position": "Software Engineer",
-    "status": "pending",
-    "jobType": "full-time",
-    "jobLocation": "Chennai",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Atlassian",
-    "position": "Full Stack Developer",
-    "status": "interview",
-    "jobType": "remote",
-    "jobLocation": "Bangalore",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Adobe",
-    "position": "React Developer",
-    "status": "pending",
-    "jobType": "full-time",
-    "jobLocation": "Noida",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Netflix",
-    "position": "Node.js Developer",
-    "status": "declined",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Uber",
+    "company": "Infosys",
     "position": "MERN Stack Developer",
     "status": "interview",
     "jobType": "full-time",
-    "jobLocation": "Pune",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "PayPal",
-    "position": "API Developer",
-    "status": "pending",
-    "jobType": "full-time",
     "jobLocation": "Bangalore",
     "createdBy": "6a33ba99fc6047744ad2b620"
   },
   {
-    "company": "Spotify",
-    "position": "JavaScript Engineer",
-    "status": "interview",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Oracle",
-    "position": "Backend Engineer",
-    "status": "pending",
-    "jobType": "full-time",
-    "jobLocation": "Hyderabad",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "IBM",
-    "position": "Cloud Developer",
+    "company": "TCS",
+    "position": "Backend Developer",
     "status": "pending",
     "jobType": "full-time",
     "jobLocation": "Kolkata",
     "createdBy": "6a33ba99fc6047744ad2b620"
   },
   {
-    "company": "Intel",
-    "position": "Software Developer",
-    "status": "declined",
-    "jobType": "full-time",
-    "jobLocation": "Bangalore",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "SAP",
-    "position": "React Engineer",
+    "company": "Wipro",
+    "position": "Node.js Developer",
     "status": "interview",
     "jobType": "full-time",
-    "jobLocation": "Bangalore",
+    "jobLocation": "Pune",
     "createdBy": "6a33ba99fc6047744ad2b620"
   },
   {
-    "company": "Twilio",
-    "position": "Full Stack Engineer",
-    "status": "pending",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Stripe",
-    "position": "Node.js Engineer",
-    "status": "interview",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Meta",
-    "position": "Frontend Engineer",
-    "status": "pending",
-    "jobType": "full-time",
-    "jobLocation": "London",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Airbnb",
-    "position": "React Developer",
-    "status": "interview",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "Shopify",
-    "position": "Full Stack Developer",
-    "status": "pending",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33ba99fc6047744ad2b620"
-  },
-  {
-    "company": "LinkedIn",
+    "company": "Capgemini",
     "position": "Software Engineer",
     "status": "pending",
     "jobType": "full-time",
-    "jobLocation": "Dublin",
+    "jobLocation": "Mumbai",
     "createdBy": "6a33ba99fc6047744ad2b620"
   },
   {
-    "company": "GitHub",
+    "company": "Accenture",
+    "position": "React Engineer",
+    "status": "interview",
+    "jobType": "full-time",
+    "jobLocation": "Hyderabad",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Razorpay",
+    "position": "Backend Engineer",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Bangalore",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Flipkart",
+    "position": "Full Stack Developer",
+    "status": "interview",
+    "jobType": "full-time",
+    "jobLocation": "Bangalore",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Swiggy",
+    "position": "Frontend Developer",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Bangalore",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Zomato",
+    "position": "Software Engineer",
+    "status": "interview",
+    "jobType": "full-time",
+    "jobLocation": "Gurgaon",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Paytm",
+    "position": "API Developer",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Noida",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "PhonePe",
+    "position": "Node.js Engineer",
+    "status": "interview",
+    "jobType": "full-time",
+    "jobLocation": "Bangalore",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Freshworks",
+    "position": "React Developer",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Chennai",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Zoho",
     "position": "Backend Developer",
+    "status": "interview",
+    "jobType": "full-time",
+    "jobLocation": "Chennai",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "CRED",
+    "position": "Software Engineer",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Bangalore",
+    "createdBy": "6a33ba99fc6047744ad2b620"
+  },
+  {
+    "company": "Postman",
+    "position": "API Engineer",
     "status": "interview",
     "jobType": "remote",
     "jobLocation": "Remote",
@@ -161,103 +161,151 @@
   },
 
   {
-    "company": "Google",
-    "position": "SRE Engineer",
+    "company": "MongoDB",
+    "position": "Backend Engineer",
     "status": "pending",
-    "jobType": "full-time",
-    "jobLocation": "Munich",
+    "jobType": "remote",
+    "jobLocation": "Remote",
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "Amazon",
-    "position": "DevOps Engineer",
+    "company": "Elastic",
+    "position": "Software Engineer",
     "status": "interview",
+    "jobType": "remote",
+    "jobLocation": "Remote",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "HashiCorp",
+    "position": "Cloud Engineer",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Remote",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "Docker",
+    "position": "Platform Engineer",
+    "status": "interview",
+    "jobType": "remote",
+    "jobLocation": "Remote",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "Vercel",
+    "position": "Frontend Engineer",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Remote",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "Netlify",
+    "position": "Full Stack Developer",
+    "status": "interview",
+    "jobType": "remote",
+    "jobLocation": "Remote",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "Snowflake",
+    "position": "Backend Developer",
+    "status": "pending",
     "jobType": "full-time",
     "jobLocation": "Berlin",
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "Nvidia",
+    "company": "Okta",
     "position": "Software Engineer",
+    "status": "interview",
+    "jobType": "remote",
+    "jobLocation": "Remote",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "Canva",
+    "position": "Frontend Developer",
     "status": "pending",
     "jobType": "full-time",
-    "jobLocation": "Bangalore",
+    "jobLocation": "Sydney",
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "Tesla",
-    "position": "Backend Developer",
-    "status": "declined",
-    "jobType": "full-time",
-    "jobLocation": "Austin",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "Cisco",
-    "position": "Node.js Developer",
+    "company": "Wise",
+    "position": "Backend Engineer",
     "status": "interview",
     "jobType": "full-time",
-    "jobLocation": "Bangalore",
+    "jobLocation": "London",
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "Siemens",
+    "company": "Klarna",
     "position": "Full Stack Engineer",
     "status": "pending",
     "jobType": "full-time",
-    "jobLocation": "Munich",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "Spotify",
-    "position": "React Developer",
-    "status": "interview",
-    "jobType": "remote",
     "jobLocation": "Stockholm",
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "Booking",
-    "position": "Backend Engineer",
-    "status": "pending",
+    "company": "Revolut",
+    "position": "Node.js Developer",
+    "status": "interview",
     "jobType": "full-time",
-    "jobLocation": "Amsterdam",
+    "jobLocation": "London",
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "Zalando",
-    "position": "JavaScript Engineer",
+    "company": "Bolt",
+    "position": "Software Engineer",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Tallinn",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "Personio",
+    "position": "Backend Developer",
+    "status": "interview",
+    "jobType": "full-time",
+    "jobLocation": "Munich",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "Celonis",
+    "position": "Software Engineer",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Munich",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "N26",
+    "position": "React Developer",
+    "status": "interview",
+    "jobType": "full-time",
+    "jobLocation": "Berlin",
+    "createdBy": "6a33b721bcd2294df31b9856"
+  },
+  {
+    "company": "Delivery Hero",
+    "position": "Full Stack Engineer",
     "status": "pending",
     "jobType": "full-time",
     "jobLocation": "Berlin",
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "SAP",
-    "position": "Cloud Engineer",
+    "company": "DeepL",
+    "position": "Backend Engineer",
     "status": "interview",
     "jobType": "full-time",
-    "jobLocation": "Walldorf",
+    "jobLocation": "Cologne",
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "IBM",
-    "position": "MERN Developer",
-    "status": "pending",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "Oracle",
-    "position": "API Engineer",
-    "status": "interview",
-    "jobType": "full-time",
-    "jobLocation": "Hyderabad",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "Twilio",
+    "company": "Miro",
     "position": "Software Engineer",
     "status": "pending",
     "jobType": "remote",
@@ -265,59 +313,11 @@
     "createdBy": "6a33b721bcd2294df31b9856"
   },
   {
-    "company": "Stripe",
-    "position": "Node.js Engineer",
-    "status": "interview",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "GitLab",
-    "position": "Backend Developer",
-    "status": "pending",
-    "jobType": "remote",
-    "jobLocation": "Remote",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "DigitalOcean",
-    "position": "Cloud Developer",
-    "status": "interview",
-    "jobType": "full-time",
-    "jobLocation": "Remote",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "Red Hat",
+    "company": "Grafana Labs",
     "position": "Platform Engineer",
-    "status": "pending",
-    "jobType": "full-time",
-    "jobLocation": "Bangalore",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "JetBrains",
-    "position": "Software Developer",
     "status": "interview",
-    "jobType": "remote",
-    "jobLocation": "Prague",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "Cloudflare",
-    "position": "Backend Engineer",
-    "status": "pending",
     "jobType": "remote",
     "jobLocation": "Remote",
-    "createdBy": "6a33b721bcd2294df31b9856"
-  },
-  {
-    "company": "Datadog",
-    "position": "Full Stack Developer",
-    "status": "interview",
-    "jobType": "full-time",
-    "jobLocation": "New York",
     "createdBy": "6a33b721bcd2294df31b9856"
   }
 ]
