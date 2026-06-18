@@ -20,6 +20,9 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
+// For deployment
+app.set("trust proxy", 1);
+
 // Core Middleware
 app.use(express.json());
 
