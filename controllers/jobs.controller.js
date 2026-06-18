@@ -6,13 +6,46 @@ import BadRequestError from "../errors/bad-request.js";
 import NotFoundError from "../errors/not-found.js";
 
 const getAllJobs = async (req, res) => {
-  const jobs = await Job.find({
+  // search-params (search-bar)
+  const { search, status, jobType, sort } = req.query;
+
+  const queryObj = {
     createdBy: req.user.userId,
-  }).sort("createdAt");
+  };
+
+  if (search) {
+    queryObj.position = { $regex: search, $options: "i" };
+  }
+
+  // status and JobType (dropdowns)
+  if (status && status !== "all") {
+    queryObj.status = status;
+  }
+
+  if (jobType && jobType !== "all") {
+    queryObj.jobType = jobType;
+  }
+
+  let result = Job.find(queryObj);
+
+  // Chain sort conditions (dropdowns)
+  if (sort === "latest") {
+    result = result.sort("-createdAt");
+  }
+  if (sort === "oldest") {
+    result = result.sort("createdAt");
+  }
+  if (sort === "a-z") {
+    result = result.sort("position");
+  }
+  if (sort === "z-a") {
+    result = result.sort("-position");
+  }
+
+  const jobs = await result;
 
   res.status(StatusCodes.OK).json({
     jobs,
-    count: jobs.length,
   });
 };
 
