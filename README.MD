@@ -1,99 +1,47 @@
-- npm install moment
-- import mongoose and moment
+# Jobster - Full Stack Job Tracking Application
 
-controllers/jobs
+Jobster is a full-stack job tracking web application that helps users organize and monitor their job applications efficiently. Users can register securely, log in using JWT-based authentication, create and manage job applications, update their profile information, and track their application progress through different stages such as Pending, Interview, and Declined.
 
-```js
-const mongoose = require('mongoose');
-const moment = require('moment');
-```
+The application is built using the MERN stack with a React frontend and a Node.js + Express backend running in ES Modules mode. MongoDB is used as the database with Mongoose ODM for schema management and data modeling.
 
-- [Javascript Nuggets - Reduce Basics](https://youtu.be/3WkW9nrS2mw)
-- [Javascript Nuggets - Reduce (object example)](https://youtu.be/5BFkp8JjLEY)
+Key Features:
 
-controllers/jobs
+* Secure user registration and login using JWT authentication
+* Password hashing with bcryptjs
+* Protected API routes using authentication middleware
+* Create, read, update, and delete (CRUD) job applications
+* Search, filter, sort, and paginate jobs
+* Update user profile information
+* Dashboard statistics using MongoDB Aggregation Pipelines
+* Monthly job application analytics and status-based statistics
+* Rate limiting and security middleware using Helmet
+* Responsive React frontend with Redux Toolkit for state management
+* RESTful API architecture with MongoDB Atlas integration
 
-```js
-const showStats = async (req, res) => {
-  let stats = await Job.aggregate([
-    { $match: { createdBy: mongoose.Types.ObjectId(req.user.userId) } },
-    { $group: { _id: '$status', count: { $sum: 1 } } },
-  ]);
+Tech Stack:
 
-  stats = stats.reduce((acc, curr) => {
-    const { _id: title, count } = curr;
-    acc[title] = count;
-    return acc;
-  }, {});
+Frontend:
 
-  const defaultStats = {
-    pending: stats.pending || 0,
-    interview: stats.interview || 0,
-    declined: stats.declined || 0,
-  };
+* React 18
+* Redux Toolkit
+* React Router DOM
+* Axios
+* Styled Components
+* Recharts
 
-  let monthlyApplications = await Job.aggregate([
-    { $match: { createdBy: mongoose.Types.ObjectId(req.user.userId) } },
-    {
-      $group: {
-        _id: { year: { $year: '$createdAt' }, month: { $month: '$createdAt' } },
-        count: { $sum: 1 },
-      },
-    },
-    { $sort: { '_id.year': -1, '_id.month': -1 } },
-    { $limit: 6 },
-  ]);
-  monthlyApplications = monthlyApplications
-    .map((item) => {
-      const {
-        _id: { year, month },
-        count,
-      } = item;
-      const date = moment()
-        .month(month - 1)
-        .year(year)
-        .format('MMM Y');
-      return { date, count };
-    })
-    .reverse();
+Backend:
 
-  res.status(StatusCodes.OK).json({ defaultStats, monthlyApplications });
-};
-```
+* Node.js
+* Express 5
+* MongoDB
+* Mongoose
+* JWT Authentication
+* bcryptjs
+* Helmet
+* Express Rate Limit
 
-#### Deploy
+Database:
 
-- remove existing git repo
+* MongoDB Atlas
 
-- add reverse() in showStats
-
-controllers/jobs.js
-
-```js
-monthlyApplications = monthlyApplications
-  .map((item) => {
-    const {
-      _id: { year, month },
-      count,
-    } = item;
-    const date = moment()
-      .month(month - 1)
-      .year(year)
-      .format('MMM Y');
-    return { date, count };
-  })
-  .reverse();
-```
-
-- remove Procfile
-- remove engines from package.json
-
-```json
-"engines": {
-    "node": "16.x"
-  }
-```
-
-- fix build folder (remove /build from client/.gitignore)
-- setup new github repo
-- deploy to render
+This project demonstrates full-stack development concepts including authentication, authorization, REST APIs, database design, aggregation pipelines, state management, security best practices, and deployment-ready architecture.
