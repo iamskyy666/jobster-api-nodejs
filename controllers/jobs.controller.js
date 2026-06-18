@@ -5,6 +5,9 @@ import Job from "../models/Job.model.js";
 import BadRequestError from "../errors/bad-request.js";
 import NotFoundError from "../errors/not-found.js";
 
+import moment from "moment";
+import mongoose from "mongoose";
+
 const getAllJobs = async (req, res) => {
   // search-params (search-bar)
   const { search, status, jobType, sort } = req.query;
@@ -141,4 +144,28 @@ const deleteJob = async (req, res) => {
   res.status(StatusCodes.OK).send();
 };
 
-export { createJob, deleteJob, getAllJobs, updateJob, getJob };
+const showStats = async (req, res) => {
+  let stats = await Job.aggregate([
+    { $match: { createdBy: new mongoose.Types.ObjectId(req.user.userId) } },
+    { $group: { _id: "$status", count: { $sum: 1 } } },
+  ]);
+   // console.log(stats);
+  // [{ _id: 'declined', count: 1 },{ _id: 'pending', count: 20 },{ _id: 'interview', count: 19 }]
+
+  stats = stats.reduce((acc, curr) => {
+    const { _id: title, count } = curr;
+    acc[title] = count;
+    return acc;
+  }, {});
+
+   const defaultStats = {
+     pending: stats.pending || 0,
+     interview: stats.interview || 0,
+     declined: stats.declined || 0,
+   }; 
+  res
+    .status(StatusCodes.OK)
+    .json({ defaultStats, monthlyApplications: [] });
+};
+
+export { createJob, deleteJob, getAllJobs, updateJob, getJob, showStats };

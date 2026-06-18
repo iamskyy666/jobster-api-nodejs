@@ -6,12 +6,14 @@ import {
   getAllJobs,
   updateJob,
   getJob,
+  showStats,
 } from "../controllers/jobs.controller.js";
 import testUserMiddleware from "../middleware/test-user.middleware.js";
 
 const router = express.Router();
 
 router.route("/").post(testUserMiddleware, createJob).get(getAllJobs);
+router.route("/stats").get(showStats);
 
 router
   .route("/:id")
